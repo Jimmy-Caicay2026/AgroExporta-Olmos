@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>780</width><height>480</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>AgroExporta Olmos - Monitoreo de Riego (Palto Hass)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="lblTitulo">
+      <property name="font"><font><pointsize>14</pointsize><weight>75</weight><bold>true</bold></font></property>
+      <property name="text"><string>CONTROL DE SENSORES DE SUELO - AGROEXPORTA OLMOS</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="txtBuscar">
+        <property name="placeholderText"><string>Buscar por código de parcela...</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnNuevo">
+        <property name="text"><string> Nuevo Registro</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tblSensores">
+      <property name="editTriggers"><set>QAbstractItemView::NoEditTriggers</set></property>
+      <property name="selectionBehavior"><set>QAbstractItemView::SelectRows</set></property>
+      <column><property name="text"><string>ID</string></property></column>
+      <column><property name="text"><string>Parcela</string></property></column>
+      <column><property name="text"><string>Humedad (%)</string></property></column>
+      <column><property name="text"><string>Temp. Suelo (°C)</string></property></column>
+      <column><property name="text"><string>Estado / Alerta</string></property></column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

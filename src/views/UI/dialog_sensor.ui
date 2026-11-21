@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogSensor</class>
+ <widget class="QDialog" name="DialogSensor">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>380</width><height>240</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Registrar Lectura de Sensor</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0"><widget class="QLabel" name="lbl1"><property name="text"><string>Código Parcela:</string></property></widget></item>
+     <item row="0" column="1"><widget class="QLineEdit" name="txtParcela"><property name="placeholderText"><string>Ej. PARC-01</string></property></widget></item>
+     <item row="1" column="0"><widget class="QLabel" name="lbl2"><property name="text"><string>Humedad (%):</string></property></widget></item>
+     <item row="1" column="1"><widget class="QLineEdit" name="txtHumedad"><property name="placeholderText"><string>Ej. 22.5</string></property></widget></item>
+     <item row="2" column="0"><widget class="QLabel" name="lbl3"><property name="text"><string>Temp. Suelo (°C):</string></property></widget></item>
+     <item row="2" column="1"><widget class="QLineEdit" name="txtTemperatura"><property name="placeholderText"><string>Ej. 24.0</string></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item><widget class="QPushButton" name="btnGuardar"><property name="text"><string>Guardar</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnCancelar"><property name="text"><string>Cancelar</string></property></widget></item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
